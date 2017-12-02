@@ -18,6 +18,7 @@ public class Teste_Amazon {
         // TODO code application logic here
         
         Teste teste = new Teste();
+        teste.run();
     }
     
 }

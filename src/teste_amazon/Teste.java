@@ -19,7 +19,7 @@ public class Teste {
     private final List<String> targetTags = new ArrayList<>();
     private final List<String> availableTags = new ArrayList<>();
 
-    public Teste() {
+    public void run() {
         targetTags.add("bila");
         targetTags.add("bola");
         targetTags.add("gaga");
@@ -83,8 +83,7 @@ public class Teste {
                         break;
                     }
                 }
-                
-                
+
                 System.out.println("##Attempt : " + model.getAttempt());
                 System.out.println("first Index: " + model.getFirstIndex() + ", word :" + model.getFirstWord());
                 System.out.println("second Index: " + model.getSecondIndex() + ", word :" + model.getSecondWord());
@@ -94,8 +93,8 @@ public class Teste {
                 System.out.println("range: " + model.getCalcRange());
                 System.out.println("");
                 System.out.println("");
-            }else{
-                System.out.println("Attempt: " + i + " doesn't find a applicable value" );
+            } else {
+                System.out.println("Attempt: " + i + " doesn't find a applicable value");
             }
         }
         System.out.println("");
